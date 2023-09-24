@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/ae6c8b0b33.js" crossorigin="anonymous" ></script>
+</head>
+<body>
+    <div class="Main">
+        <div class="toDo">
+            <header class="heading">To Do List</header>
+            <div class="inputbox">
+                <i class="icon fa-solid fa-clipboard-list"></i>
+                
+             <input type="text" placeholder="Type your todo List" >
+           
+             <i id="addbutton" class="icon fa-solid fa-plus"></i>
+            </div>
+            <div class="clckbutton">
+                <i class="tickIcon fa-solid fa-check-double"></i>
+                <span class="btn clearall">complete all</span>
+                <span class="btn clearcomtask"> clear complete</span>
+
+            </div>
+            <hr>
+            <ul class="itemlist"></ul><!--Empty unorder Todo list for add list item-->
+            <hr>
+            <div class="clckbutton">
+                <span>
+                    <span class="pendingtask"></span>  <!-- Empty span for task count-->
+                    task left
+                </span>
+                <div>
+                    <span class="pendingtask">All</span>
+                    <span class="btn complete">Complete</span>
+                    <span class="btn uncomplete">uncomplete</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

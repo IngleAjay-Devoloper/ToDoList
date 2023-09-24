@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.Main {
+    background: lightgrey;
+    max-width: 450px;
+    width: 100%;
+    margin: 200px auto;
+    padding: 40px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.toDo {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 7px 5px;
+    box-shadow: 0px;
+}
+
+.heading {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.inputbox {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    border-radius: 5px;
+    background: #eeefef;
+}
+
+.inputbox input {
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+
+.inputbox:hover {
+    background-color: rgb(222, 220, 220);
+}
+
+.inputbox input:focus{
+    outline: none;
+}
+
+
+/* Styling icon size */
+.icon {
+    font-size: 1.5rem;
+    padding: 10px;
+
+}
+
+/* .del {
+    font-size: 1.5rem;
+    padding: 10px;
+
+} */
+.tickIcon {
+    font-size: 0.8rem;
+    padding: 6px;
+}
+/* Plus button hide when you didn't type */
+#addbutton {
+    display: none;
+}
+
+.clckbutton {
+    display: flex;
+    justify-content:space-between;
+    color: rgb(189, 187, 187);
+}
+
+/* Styling horizontal line dotted */
+hr {
+    border: none;
+    border-top: 1px dotted rgb(192, 187, 187) ;
+}
+
+/* Styling Todo list when task add */
+.itemlist li {
+    position: relative;
+    /* background-color: #d9d6d6; */
+    overflow: hidden;
+    margin: 7px;
+    padding-left: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    word-break: break-all;
+}
+
+
+.itemlist li:hover {
+    background-color: #eee;
+}
+/* delete button */
+.itemlist li .del {
+    rotate: 90deg;
+    position: absolute;
+    right: -30px;
+    color: #000;
+}
+
+/* Delete button hover */
+.itemlist li:hover .del{
+    right: 0px;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+
+.pendingtask {
+    color: black;
+    padding-right: 3px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: rgb(105, 105, 105);
+}
+
+/* Hide browsers default checkbox */
+.box input{
+    display: none;
+}
+
+/* Create Custom Checkbox */
+.checkmark {
+    background-color: #fff;
+    border: 3px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 20px;
+    left: 0px;
+    position: absolute;
+    top: 2px;
+    width: 21px;
+}
+
+/* add bluebackground when checkbox checked */
+.box input:checked~.checkmark {
+    background-color: black;
+    border-color: lightgrey;
+    
+}
+
+/* Create checkmark indicator, hidden when not checked */
+
+.checkmark:after {
+    border: 2px solid #fff;
+        border-top: none;
+        border-right: none;
+        content: "";
+        height: 5px;
+        left: 4px;
+        opacity: 0;
+        position: absolute;
+        top: 5px;
+        transform: rotate(-45deg);
+        width: 12px;
+}
+
+.box .checkmark:after {
+    opacity: 1;
+} 
+
+
+
+/* Show checkmark when checked */
+.box input:checked~.checkmark:after {
+    
+    display: block;
+}
+
+.clearall {
+    text-align: left;
+    margin: 1px 212px 0px 0px;
+
+}
